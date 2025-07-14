@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Recommendation</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #e9f1f7;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      padding-top: 60px;
+      min-height: 100vh;
+    }
+    .container {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+    h2 {
+      color: #333;
+    }
+    h3 {
+      margin-top: 30px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      background-color: #f9f9f9;
+      margin-bottom: 10px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      border-left: 5px solid #4CAF50;
+    }
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #2196F3;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2> 선거 참여 연령 하향에 대한 당신의 의견 : {{ opinion }}</h2>
+    <h3>📌 선거 참여 연령 하향과 관련된 여러 근거들</h3>
+    <ul>
+      {% for reason in reasons %}
+        <li>{{ reason }}</li>
+      {% endfor %}
+    </ul>
+    <h4>위 글들을 면밀히 읽으셨다면, 현재 화면을 캡쳐하신후 구글 폼으로 돌아가 작업중이던 설문을 마저 진행해주세요.
+  </div>
+</body>
+</html>

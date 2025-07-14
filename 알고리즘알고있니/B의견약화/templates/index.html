@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>논제 투표</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 400px;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    label {
+      display: block;
+      margin: 15px 0;
+      font-size: 1.2em;
+    }
+    button {
+      padding: 10px 25px;
+      font-size: 1em;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>💬 선거 참여 연령을 하향해야 한다</h2>
+    <form method="POST">
+      <label>
+        <input type="radio" name="opinion" value="찬성" required> 찬성
+      </label>
+      <label>
+        <input type="radio" name="opinion" value="반대"> 반대
+      </label>
+      <br><br>
+      <button type="submit">의견 제출</button>
+    </form>
+  </div>
+</body>
+</html>
